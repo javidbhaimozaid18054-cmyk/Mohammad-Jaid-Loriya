@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work — Mohammed Jaid Loriya</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+        <a href="index.html" class="brand">MOHAMMED JAID LORIYA</a>
+        <nav class="desktop-nav">
+            <a href="work.html" class="active-link">WORK</a>
+            <a href="info.html">INFO</a>
+            <a href="https://www.linkedin.com/in/mo-jaid-loriya-24474b306/" target="_blank">LINKEDIN</a>
+            <a href="resume.pdf" target="_blank" class="btn-resume">RESUME ↗</a>
+        </nav>
+    </header>
+
+    <!-- ================= MAIN ================= -->
+    <main class="work-page">
+
+        <!-- PAGE TITLE & INTRO -->
+        <section class="work-header">
+            <h1 class="page-title">WORK</h1>
+            <p class="work-intro">
+                A selection of projects I've worked on.<br>
+                Each project reflects my passion for design,<br>
+                development and problem solving.
+            </p>
+        </section>
+
+        <!-- ================= PROJECTS LIST ================= -->
+        <section class="project-list">
+            
+            <!-- PROJECT 01 -->
+            <a href="https://javidbhaimozaid18054-cmyk.github.io/elvion-engineering/" target="_blank" class="project-item reveal">
+                <div class="proj-num">01</div>
+                
+                <div class="proj-details">
+                    <h2>ELVION ENGINEERING<br>SOLUTIONS</h2>
+                    <p>Professional company website for industrial valve & engineering solutions with modern and responsive design.</p>
+                    <small>HTML / CSS / JavaScript</small>
+                </div>
+                
+                <div class="proj-image">
+                    <!-- Placeholder image tag, replace src with your actual project screenshot -->
+                    <img src="images/elvion.png" alt="Elvion Engineering">
+                </div>
+                
+                <div class="proj-arrow">↗</div>
+            </a>
+
+            <!-- PROJECT 03 -->
+            <a href="#" class="project-item reveal">
+                <div class="proj-num">03</div>
+                
+                <div class="proj-details">
+                    <h2>AI / ML PROJECTS<br>(COMING SOON)</h2>
+                    <p>Excited to build and showcase AI & ML projects as I continue my B.Tech journey.</p>
+                </div>
+                
+                <div class="proj-image">
+                    <img src="images/ai-mockup.jpg" alt="AI ML Projects">
+                </div>
+                
+                <div class="proj-arrow">↗</div>
+            </a>
+
+        </section>
+    </main>
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script>
+        /* Scroll Reveal (Same as your old code) */
+        const revealElements = document.querySelectorAll(".reveal");
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                }
+            });
+        }, { threshold: 0.15 });
+
+        revealElements.forEach(element => observer.observe(element));
+    </script>
+</body>
+</html>
